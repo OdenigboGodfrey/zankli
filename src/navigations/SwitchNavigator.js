@@ -5,7 +5,7 @@ import ContainerScreen from '../screens/container/ContainerScreen';
 
 const SwitchNavigator = createSwitchNavigator(
   {
-    Home: {
+    App: {
       screen: AppNavigator,
     },
     Auth: {

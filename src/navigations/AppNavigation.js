@@ -35,6 +35,10 @@ const AppNavigator = createStackNavigator(
       screen: MoreScreen,
       navigationOptions: {headerShown: false},
     },
+    Tabs: {
+      screen: TabNavigator,
+      navigationOptions: {headerShown: false},
+    },
   },
   {
     initialRouteName: 'Container',

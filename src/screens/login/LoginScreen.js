@@ -22,7 +22,7 @@ const strings = AppStrings.loginScreenStrings;
 class LoginScreen extends Component {
   constructor(props) {
     super(props);
-    console.log("props", JSON.stringify(props.navigation.state))
+    console.log('props', JSON.stringify(props.navigation.state));
   }
 
   state = {
@@ -35,7 +35,7 @@ class LoginScreen extends Component {
   }
   onPressLoginButton() {
     // alert('btn tapped');
-    this.props.navigation.navigate('AddMeasurement');
+    this.props.navigation.navigate('App');
   }
   onPressCreateAccount() {
     alert('create account');

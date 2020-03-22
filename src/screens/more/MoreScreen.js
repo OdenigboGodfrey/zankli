@@ -26,7 +26,7 @@ export default class MoreScreen extends Component {
           icon
           onPress={() => {
             console.log("Add measurement", 1);
-            this.props.navigation.navigate('AddMeasurement');
+            this.props.navigation.navigate('Login');
             }}>
           <Left>
             <Button style={{backgroundColor: 'white'}}>
