@@ -40,7 +40,7 @@ export default class ContainerScreen extends Component {
               ]}
             >
               {/* <Icon name="ios-person" style={{height: 50, width: 50, alignSelf: 'center', marginLeft: 25, marginRight: 0, fontSize: 35, marginTop: '15%', color: 'white'}} /> */}
-              <Image source={require('./../../../assets/images/no_profile_pic.png')} style={{resizeMode: 'contain', height: 50, width: 50,alignSelf: 'center', marginRight: 10,}} />
+              <Image source={require('./../../../assets/images/no_profile_pic.png')} style={{resizeMode: 'contain', height: 40, width: 40,alignSelf: 'center', marginRight: 10, justifyContent: 'center', marginVertical: 5}} />
             </View>
             
             <Text style={{textAlignVertical: 'center', height: '100%',alignSelf: 'center', marginLeft: 2, color: 'white'}}>Guest</Text>

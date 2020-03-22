@@ -37,7 +37,7 @@ class HomeScreen extends Component {
                   <Text style={{fontSize: 14, textAlign: 'center', paddingTop: 10}}>View your daily schedule and mark your meds when taken</Text>  
                 </View>
                 
-                <Button rounded style={{alignItems: 'center', width: '80%', alignSelf: 'center'}} onPress={() => this.props.navigation.navigate('Updates')}>
+                <Button rounded style={{alignItems: 'center', width: '80%', alignSelf: 'center'}} onPress={() => this.props.navigation.navigate('Login')}>
                   <Text style={{ width: '100%', height: '100%', textAlign: 'center', textAlignVertical: 'center',alignSelf: 'stretch'}}>Add a med</Text>
                 </Button>
               </View>

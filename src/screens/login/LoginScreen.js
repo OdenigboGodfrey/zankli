@@ -28,6 +28,7 @@ class LoginScreen extends Component {
   state = {
     username: '',
     password: '',
+    secureTextEntry: true,
   };
 
   onPressForgotPassword() {
@@ -75,11 +76,22 @@ class LoginScreen extends Component {
                     />
                   </Item>
                   <Item rounded style={[Styles.inputItem]}>
-                    <Icon name="key" style={{color: Colours.black}} />
+                    <Icon name="ios-key" style={{color: Colours.black}} />
                     <Input
                       style={{color: Colours.black}}
                       placeholderTextColor={Colours.black}
                       placeholder={AppStrings.genericStrings.password}
+                      secureTextEntry={this.state.secureTextEntry}
+                    />
+                    <Icon
+                      name="ios-eye"
+                      style={{color: Colours.black}}
+                      onPress={() => {
+                        this.setState({secureTextEntry: false});
+                        setTimeout(() => {
+                          this.setState({secureTextEntry: true});
+                        }, 2000);
+                      }}
                     />
                   </Item>
 
