@@ -50,12 +50,12 @@ export default class ContainerScreen extends Component {
             <Icon name="ios-notifications-off" style={{marginLeft: 20,color: 'white'}}/>
             </Button>
               <Button icon style={{elevation: 0}}>
-              <Icon name="ios-add" style={{marginLeft: 10,color: 'white', fontSize: 35}}/>
+                <Icon name="ios-add" style={{marginLeft: 10,color: 'white', fontSize: 35}}/>
               </Button>
               
           </Right>
         </Header>
-        <TabNavigation style={{flex: 1, width: '100%', height: '100%'}} />
+        <TabNavigation style={{flex: 1, width: '100%', height: '100%'}} screenProps={{ root: this.props.navigation }} />
       </Container>
     );
   }
