@@ -24,5 +24,5 @@ const TabNavigator = createBottomTabNavigator({
     navigationOptions: {headerShown: false},
   },
 });
-
-export default createAppContainer(TabNavigator);
+// createAppContainer
+export default (TabNavigator);

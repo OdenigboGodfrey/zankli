@@ -18,11 +18,16 @@ const strings = AppStrings.signupScreen;
 class HomeScreen extends Component {
   constructor(props) {
     super(props);
+    console.log("props", props);
   }
 
   state = {
     noMeds: true
   };
+
+  componentDidMount() {
+    // this.props.navigation.goBack();
+  }
 
   render() {
     return (
