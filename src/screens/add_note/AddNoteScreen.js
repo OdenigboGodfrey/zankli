@@ -22,7 +22,10 @@ import {strings as AppStrings} from './../../strings';
 import HomePageBox from '../../components/homePageBox';
 import {getDay, Colours} from '../../utils';
 import { ScrollView } from 'react-native';
+<<<<<<< HEAD
 import { SpinnerButton } from '../../components/SpinnerButton';
+=======
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
 
 const strings = AppStrings.signupScreen;
 
@@ -33,7 +36,10 @@ export default class AddNoteScreen extends Component {
 
   state = {
       typeSelected: 'General',
+<<<<<<< HEAD
       btnClicked: false
+=======
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
   };
 
   set = (v) => {
@@ -41,6 +47,7 @@ export default class AddNoteScreen extends Component {
   }
 
   onTypeChange = (text) => {
+<<<<<<< HEAD
       console.log('pressed')
       this.set({typeSelected: text});
   }
@@ -48,6 +55,9 @@ export default class AddNoteScreen extends Component {
   onSavePress = () => {
       this.setState({btnClicked: true});
       this.setState({btnClicked: false});
+=======
+      this.set(text);
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
   }
 
   render() {
@@ -91,6 +101,7 @@ export default class AddNoteScreen extends Component {
                             </Left>
                             <Right>
                                 <Picker 
+<<<<<<< HEAD
                                     mode={'dropdown'}
                                     iosIcon={<Icon name={'ios-arrow-down'} />}
                                     style={{ alignSelf: 'stretch', height: 40 }}
@@ -99,6 +110,10 @@ export default class AddNoteScreen extends Component {
                                     headerTitleStyle={{ color: "#fff" }}
                                     placeholderStyle={{color: '#aaa'}}
                                     itemTextStyle={{color: '#aaa'}}
+=======
+                                    iosIcon={<Icon name={'ios-arrow-down'} />}
+                                    mode={'dropdown'}
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
                                     onValueChange={this.onTypeChange.bind(this)}
                                     selectedValue={this.state.typeSelected}
                                 >
@@ -108,11 +123,16 @@ export default class AddNoteScreen extends Component {
                             </Right>
                         </Item>
                         <Item style={{alignSelf: 'center', marginTop: 10}}>
+<<<<<<< HEAD
                             {/* <Button
+=======
+                            <Button
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
                             rounded
                             style={{width: '80%', alignSelf: 'center'}}
                             >
                                 <Text style={{width: '100%', alignSelf: 'center', textAlign: 'center'}}>Save</Text>
+<<<<<<< HEAD
                             </Button> */}
                             <SpinnerButton 
                                 label={'Save'}
@@ -121,6 +141,9 @@ export default class AddNoteScreen extends Component {
                                 btnClicked={this.state.btnClicked}
                                 onPress={this.onSavePress}
                             />
+=======
+                            </Button>
+>>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
                         </Item>
                     </Form>
                 </View>
