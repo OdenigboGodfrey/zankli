@@ -23,10 +23,7 @@ import {strings as AppStrings} from './../../strings';
 import HomePageBox from '../../components/homePageBox';
 import {getDay, Colours} from '../../utils';
 import { ScrollView } from 'react-native';
-<<<<<<< HEAD
 import { SpinnerButton } from '../../components/SpinnerButton';
-=======
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
 
 const strings = AppStrings.signupScreen;
 
@@ -37,12 +34,8 @@ export default class AddAppointmentScreen extends Component {
 
   state = {
       noAppointments: true,
-<<<<<<< HEAD
       typeSelected: 'Doctor',
       btnClicked: false
-=======
-      typeSelected: 'Doctor'
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
   };
 
   set = (v) => {
@@ -53,14 +46,11 @@ export default class AddAppointmentScreen extends Component {
       this.set(text);
   }
 
-<<<<<<< HEAD
   onBookPress = () => {
       this.set({btnClicked: true});
       this.set({btnClicked: false});
   }
 
-=======
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
   render() {
     return (
         <ScrollView contentContainerStyle={{flexGrow: 1}}>
@@ -75,17 +65,13 @@ export default class AddAppointmentScreen extends Component {
                         <Text style={{alignSelf: 'stretch', textAlign: 'center', color: Colours.white, fontSize: 17}}>Add Appointments</Text>
                     </Body>
                     <Right>
-<<<<<<< HEAD
-=======
                         <Button icon style={{elevation: 0, borderWidth: 0}}>
                             <Icon name="ios-save" style={{marginLeft: 10,color: 'white', fontSize: 25}}/>
                         </Button>
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
                     </Right>
                 </Header>
                 <View style={[{flexWrap: 'wrap', padding: 0, borderWidth: 0, width: '100%', height: '100%' }]}>
                 {/* <View style={{flex:0.2, width: '100%', height: 120, alignSelf: 'stretch'}}></View> */}
-<<<<<<< HEAD
                 <View style={{flex: 1, backgroundColor: '#eee', width: '100%' }}>
                     <Form>
                         <Separator style={{backgroundColor: '#fff'}}>
@@ -189,22 +175,6 @@ export default class AddAppointmentScreen extends Component {
                             btnClicked={this.state.btnClicked}
                             onPress={this.onBookPress}
                         />
-=======
-                <View style={{flex: 1, backgroundColor: '#eee', width: '100%', paddingRight: 10, paddingTop: 10}}>
-                    <Form>
-                        <Picker
-                            iosIcon={<Icon name={'ios-arrow-down'} />}
-                            mode={'dropdown'}
-                            onValueChange={this.onTypeChange.bind(this)}
-                            selectedValue={this.state.typeSelected}
-                        >
-                            <Picker.Item label={'General'} value={'General'} />
-                            <Picker.Item label={'Physical'} value={'Physical'} />
-                        </Picker>
-                        <Separator style={{backgroundColor: '#ddd'}}>
-                            
-                        </Separator>
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
                     </Form>
                 </View>
                 

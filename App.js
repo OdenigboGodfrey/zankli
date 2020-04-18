@@ -29,10 +29,7 @@ import NoteScreen from './src/screens/notes/NoteScreen';
 import AddNoteScreen from './src/screens/add_note/AddNoteScreen';
 import AddAppointmentScreen from './src/screens/add_appointment/AddAppointmentScreen';
 import AppointmentScreen from './src/screens/appointment/AppointScreen';
-<<<<<<< HEAD
 import AddMedicineScreen from './src/screens/add_medicine/AddMedicineScreen';
-=======
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
 
 class App extends React.Component {
   constructor(props) {
@@ -42,11 +39,7 @@ class App extends React.Component {
     return (
       <Root>
         {/* <SwitchNavigator navigation={this.props.navigation}/> */}
-<<<<<<< HEAD
         <AddMedicineScreen />
-=======
-        <AddAppointmentScreen />
->>>>>>> 648065c910abf7e1ff17095b28b2d5f528468bcf
         {/* <HomeScreen /> */}
         {/* <HomeScreen />  */}
        {/* <LoginScreen />  */}
